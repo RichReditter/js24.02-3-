@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul>
+        <li>
+            <img src="">
+        </li>
+        <li>
+            <img src="">
+        </li>
+        <li>
+            <img src="">
+        </li>
+    </ul>
+
+    <script>
+        // const div1 = document.createElement('div');
+        // let p = document.createElement('p')
+        // p.textContent = 'text много текста text'
+        // p.style.color = 'black'
+        // div1.prepend(p)
+        // document.body.append(div1)
+
+
+
+
+
+        // const ul = document.createElement('ul')
+        // const li = document.createElement('li')
+        // document.body.append(ul)
+        // li.textContent = '0'
+        // ul.append(li)
+
+        // for(let i = 1; i < 10000; i++){
+        //     const li = document.createElement('li')
+        //     li.textContent = i
+        //     ul.append(li)
+        // }        
+        
+        // lis = document.body.querySelectorAll('li')
+        // lis.forEach( li => {
+        //     if( li.textContent % 2){
+        //         li.style.backgroundColor = 'red'
+        //     }
+        // })
+        
+        
+
+        
+        
+        // let i = 1;
+        // let timerId = setInterval( () => {
+            
+        //     const li = document.createElement('li')
+        //     li.textContent = i;
+        //     if( i%2 === 0){
+        //         li.style.backgroundColor = 'red'
+        //     }
+        //     ul.append(li)
+        //     i++;
+        //     if(i >= 10000){
+        //         clearInterval(timerId)
+        //     }
+
+        // },[50000] )
+
+
+
+        // let i = 1;
+        // let timerId = setInterval( () => {
+        //     const li = document.createElement('li')
+        //     li.textContent = i
+        //     ul.append(li)
+        //     if( i % 2 === 0){
+        //         li.style.backgroundColor = 'cyan'
+        //     }
+        //     i++
+        //     if( i>= 10000){
+        //         clearInterval(timerId)
+        //     }
+        // },500)
+
+
+
+        
+        let one = 'https://zwierzaki.pl/wp-content/uploads/2021/09/czarny-kot-1200x900.jpeg'
+        let two = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Felis_catus-cat_on_snow.jpg/1200px-Felis_catus-cat_on_snow.jpg'
+        let three = 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Kot-019.jpg'
+        const img = [one,two,three]
+        const ul = document.createElement('ul');
+        document.body.append(ul);
+        img.forEach( el =>{
+           const li = document.createElement('li');
+           ul.append(li) ;
+           const img = document.createElement('img');
+           img.src = el;
+           li.append(img);
+        })
+        
+
+     </script>
+</body>
+</html>
